@@ -1,0 +1,107 @@
+#mytooltip {
+	padding: 5px 4px;
+	color: #fff;
+	position: absolute;
+	max-width: 175px
+}
+
+.elastic-list {
+	padding: 2px;
+	background: #21d274;
+	margin-left: -60px;
+}
+
+.elastic-list-dimension-header {
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+	color: #f0f0f0;
+	background-color: #21d274;
+	padding: 4px 0 0 5px;
+	box-sizing: border-box
+}
+
+.elastic-list-dimension {
+	float: left;
+	border: none;
+	overflow-y: auto;
+	overflow-x: hidden;
+	color: #444
+}
+
+.elastic-list-dimension-item {
+	border: 1px solid #fff;
+	background-color: #f2e6b8;
+	font-size: 11px;
+	
+}
+
+.elastic-list-dimension-item p {
+	margin: 4px 0 0 5px;
+	float: left;
+	display: inline
+}
+
+.elastic-list-dimension-item p.key {
+	width: 70%
+}
+
+.elastic-list-dimension-item p.value {
+	float: right;
+	margin-right: 22px
+}
+
+.elastic-list-dimension-item-hover {
+	background-color: #d3d3d3
+}
+
+
+#filtering {
+	border-top: 1px dotted #21d274;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: -60px;
+	height: 50px
+}
+
+#filtering .elastic-list-filters {
+	padding-top: 5px;
+	font-weight: bold;
+	margin: 0;
+	height: 25px;
+	color: #21d274
+}
+
+
+#filtering .elastic-list-filters span {
+	color: #1f77b4
+}
+
+.filter {
+	background-color: #1f77b4
+}
+
+.filter-item {
+	float: left
+}
+
+.results-title {
+	margin-left: -60px;
+	font-weight: bold;
+	
+	font-size: 12px
+}
+
+#results {
+	
+	font-size: 11px;
+	height: 200px;
+	overflow-y: auto;
+	border-top: 1px solid #909090;
+	background-color: #f0f0f0;
+	margin-left: -60px;
+}
+
+#results p {
+	border-bottom: 1px solid #fff
+}

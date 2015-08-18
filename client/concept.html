@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="styles/concept.css" type="text/css" />
+	<link rel="stylesheet" href="styles/style.css" type="text/css" />
+	<title>ArtViz - Artist Data Vizaualization</title>
+	<link rel="stylesheet" href="styles/dependency.css" />
+	<script type="text/javascript" src="js/d3.js"></script>
+	<script type="text/javascript" src="js/d3.layout.js"></script>
+	<script type="text/javascript" src="js/dependencyUtil.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/sparql.js"></script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div id="header">
+		<h1 id="logo-text">ArtViz - Dependency Wheel</h1>
+	</div>
+	<div id="header-low">
+		<div id="nav">
+			<div id="nav-bar">
+				<ul>
+					<li>
+						<a href="index.html">Dependency Wheel</a>
+
+					</li>
+					<li>
+						<a href="faceted.html">Faceted Browser</a>
+
+					</li>
+					<li>
+						<a href="timeline.html">Artist Timeline</a>
+
+					</li>
+					<li>
+						<a href="similarity.html">Similarity Diagram</a>
+
+					</li>
+					<li>
+						<a href="concept.html">Concept Map</a>
+
+					</li>
+					<li>
+						<a href="barchart.html">Artist Barchart</a>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="header-question">
+
+		<h2>Ask a Question!</h2>
+
+		<p>* Make sure the names are capitalized and correct.</p>
+
+		<input name="question" id="question" type="text" placeholder="Who is Pablo Picasso?" />
+
+		<button type="button" onclick="askQuestion()">Submit</button>
+		</br>
+		<div id="answer" class="answer">
+		</div>
+
+	</div>
+	<div id="wrap">
+		<div id="sidebar">
+
+		</div>
+		<div id="content">
+
+			<div id="chart"></div>
+
+		</div>
+	</div>
+	<script src="js/concept.js"></script>
+</body>
+
+</html>

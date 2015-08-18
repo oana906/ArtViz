@@ -1,0 +1,48 @@
+#container {
+	margin-top: 10px;
+	margin-left: -150px;
+	position: relative;
+	width: auto;
+	overflow: visible;
+}
+
+.svg {
+	width: 1300px;
+	height: auto;
+	overflow: visible;
+	position: absolute;
+}
+
+.grid .tick {
+	stroke: lightgrey;
+	opacity: 0.3;
+	shape-rendering: crispEdges;
+}
+
+.grid path {
+	stroke-width: 0;
+}
+
+#tag {
+	color: black;
+	border-style: solid;
+	border-color: #98bf21;
+	background: #ffffff;
+	width: 300px;
+	position: absolute;
+	display: none;
+	font-size: 11px;
+}
+
+#tag:before {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	left: 50%;
+	margin-left: -5px;
+	position: absolute;
+	width: 0;
+	border-width: 10px;
+	border-bottom-color: #98bf21;
+	top: -20px;
+}

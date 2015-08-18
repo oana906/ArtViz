@@ -1,0 +1,45 @@
+path.arc {
+	fill: #fff;
+}
+
+.node {
+	font-size: 13px;
+}
+
+.node:hover {
+	fill: #1f77b4;
+}
+
+.linku {
+	fill: none;
+	stroke: #1f77b4;
+	stroke-opacity: .4;
+	pointer-events: none;
+	stroke-width: 2px;
+}
+
+.similarTitle {
+	font-weight: bold;
+}
+
+.linku.source,
+.linku.target {
+	stroke-opacity: 1;
+	stroke-width: 3px;
+}
+
+.node.target {
+	fill: #ffe700 !important;
+}
+
+.linku.source {
+	stroke: #ffe700;
+}
+
+.node.source {
+	fill: #2ca02c;
+}
+
+.linku.target {
+	stroke: #2ca02c;
+}

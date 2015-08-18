@@ -1,0 +1,13 @@
+#result {
+	margin-left: -100px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+
+.bar:hover {
+	fill: yellow;
+}
+
+.bar:click {
+	fill: red;
+}

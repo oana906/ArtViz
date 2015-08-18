@@ -1,0 +1,33 @@
+svg {
+	font: 12px sans-serif;
+	margin-left: 120px;
+}
+
+text {
+	pointer-events: none;
+}
+
+.inner_node rect {
+	pointer-events: all;
+}
+
+.inner_node rect.highlight {
+	stroke: #315B7E;
+	stroke-width: 2px;
+}
+
+.outer_node circle {
+	fill: #fff;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+	pointer-events: all;
+}
+
+.outer_node circle.highlight {
+	stroke: #315B7E;
+	stroke-width: 2px;
+}
+
+.link {
+	fill: none;
+}
