@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""
+Main script for DBpedia quepy.
+"""
+
+import webapp2
 import bottle
 from bottle import template, request
 import os
@@ -10,8 +15,6 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 dbpedia = quepy.install("dbpedia")
-bottle.debug(True)
-quepy.set_loglevel("DEBUG")
 
 @bottle.route("/")
 def index():
@@ -40,7 +43,12 @@ def result(query):
             return "200"
     
     return results
-     
-bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5005)))
-#bottle.run(server='gae')
+class MainPage(webapp2.RequestHandler):
+    def get(self):   
+	bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5005)))
+	#bottle.run(server='gae')
+
+app = webapp2.WSGIApplication([
+    ('/', MainPage),
+], debug=True)
 
